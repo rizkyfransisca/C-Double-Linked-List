@@ -1,0 +1,56 @@
+ float inimedian;
+    List L1, L2,L3;
+    address P , Prec;
+    createList(L1);
+    createNewElmt(2, P);
+    insertFirst(L1, P);
+
+
+    createNewElmt(3, P);
+    insertLast(L1, P);
+
+
+    createNewElmt(1, P);
+    insertFirst(L1, P);
+
+
+    createNewElmt(5, P);
+    insertLast(L1, P);
+
+    cout<<"Ini list ke-1: ";lihatlist(L1);
+
+    deleteLast(L1, P);
+    cout<<"Ini list setelah delete last: ";lihatlist(L1);
+    deleteFirst(L1, P);
+    cout<<"Ini list setelah delete first: ";lihatlist(L1);
+    cout<<endl;
+
+    createList(L2);
+    createNewElmt(7, P);
+    insertFirst(L2, P);
+
+    Prec = P;
+    createNewElmt(8, P);
+    insertAfter(L2,Prec,P);
+
+    createNewElmt(9, P);
+    insertLast(L2, P);
+
+    Prec = P;
+    createNewElmt(10, P);
+    insertAfter(L2, Prec,P);
+
+    createNewElmt(11, P);
+    insertLast(L2, P);
+
+    cout<<"Ini list ke-2: ";lihatlist(L2);
+
+    cout<<endl;
+
+    createList(L3);
+    concat(L1,L2,L3);
+    cout<<"Ini List concat: ";
+    lihatlist(L3);
+
+    inimedian = median(L3);
+    cout<<"Ini median dari list concat: "<<inimedian<<endl;

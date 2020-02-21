@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1582081534 source:d:\kumpulan tugas rizky\struktur data\struktur data mod 4\main.cpp
+	<iostream>
+	"doublelinkedlist.h"
+
+1582044386 d:\kumpulan tugas rizky\struktur data\struktur data mod 4\doublelinkedlist.h
+
+1582082909 source:d:\kumpulan tugas rizky\struktur data\struktur data mod 4\doublelinkedlist.cpp
+	<iostream>
+	"doublelinkedlist.h"
+
